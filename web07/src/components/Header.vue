@@ -1,7 +1,7 @@
 <!-- Header.vue -->
 <template>
     <div class="header">
-      <div class="logo">系统名称</div>
+      <div class="logo">系统名称1</div>
       <div class="buttons">
         <button @click="handleSystemSettings">系统设置</button>
         <button @click="handlePersonalSettings">个人设置</button>
