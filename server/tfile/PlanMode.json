@@ -1,0 +1,11 @@
+[{
+		"Date":	"2023-12-7",
+		"StartTime":	"1:0",
+		"EndTime":	"1:30",
+		"power":	-56
+	}, {
+		"Date":	"2023-12-8",
+		"StartTime":	"15:12",
+		"EndTime":	"18:11",
+		"power":	34
+	}]
