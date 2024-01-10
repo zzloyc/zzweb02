@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import axios from 'axios'; // 引入axios
 export default {
   data() {
     return {
@@ -24,9 +25,9 @@ export default {
   submitForm() {
     // 在按钮点击时触发，可以在这里处理输入并更新展示框的内容
     this.displayText = this.inputText;
-
+  
     // 使用axios发送POST请求到后端
-    axios.post('/fcgi/your-api-endpoint', {
+    axios.post('/cgi-bin/main', {
       inputText: this.inputText,
     })
     .then(response => {

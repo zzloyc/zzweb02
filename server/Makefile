@@ -1,7 +1,7 @@
 # Makefile
 
 # 可执行文件名
-EXECUTABLE := main
+EXECUTABLE := main.fcgi
 
 # 源代码文件列表
 SOURCES := main.c \
@@ -23,7 +23,8 @@ CFLAGS := -std=gnu11 -Wall -g -I$(INCLUDES)
 
 
 # 链接时所需的库
-LIBS = -lxlsreader
+LIBS = -lxlsreader \
+		-lfcgi
 
 
 # 目标对象文件列表
