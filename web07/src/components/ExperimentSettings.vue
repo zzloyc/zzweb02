@@ -1,7 +1,7 @@
 <template>
   <div class="experiment-settings">
     <div class="form-container">
-      <textarea v-model="inputValue" placeholder="输入内容"></textarea>
+      <textarea v-model="inputText" placeholder="输入内容"></textarea>
       <button @click="submitForm">提交</button>
     </div>
     <div class="display-container">
@@ -24,15 +24,16 @@ export default {
   methods: {
   submitForm() {
     // 在按钮点击时触发，可以在这里处理输入并更新展示框的内容
-    this.displayText = this.inputText;
+    //this.displayText = this.inputText;
   
     // 使用axios发送POST请求到后端
-    axios.post('/cgi-bin/main', {
+    axios.post('/cgi-bin/main.fcgi?ExperimentSettings', {
       inputText: this.inputText,
     })
     .then(response => {
       console.log('Success:', response.data);
       // 可以根据后端返回的数据进行相应操作
+      this.displayText = response.data;
     })
     .catch(error => {
       console.error('Error:', error);

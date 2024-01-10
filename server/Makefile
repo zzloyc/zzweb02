@@ -7,6 +7,7 @@ EXECUTABLE := main.fcgi
 SOURCES := main.c \
           subfun/add.c \
 		  subfun/config.c \
+		  subfun/sysconfig.c \
 		  cm/cjson/cJSON.c \
 		  cm/libxls-1.6.2/src/endian.c \
 		  cm/libxls-1.6.2/src/locale.c \
