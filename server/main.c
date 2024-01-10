@@ -34,7 +34,7 @@ int main() {
         // 获取QUERY_STRING环境变量
         const char *query_string = getenv("QUERY_STRING");
 
-       //printf("content_length_str:%s",content_length_str);
+       //printf("content_length_str:%s",content_length_str);123
           
         if (!content_length_str) {
             // 如果没有Content-Length，则可能不是POST请求或不合法
