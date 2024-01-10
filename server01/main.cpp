@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 int main() {
-    // 初始化 FastCGI 环境
+    // 初始化 FastCGI 环境11
     FCGX_Request request;
     if (FCGX_InitRequest(&request, 0, 0) != 0) {
         std::cerr << "Failed to initialize FastCGI request." << std::endl;
